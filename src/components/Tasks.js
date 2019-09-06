@@ -10,7 +10,6 @@ export const Tasks = () => {
   const { selectedProject } = useSelectedProjectValue();
   const { projects } = useProjectsValue();
   const { tasks } = useTasks(selectedProject);
-
   let projectName = '';
 
   if (collatedTasksExist(selectedProject) && selectedProject) {
