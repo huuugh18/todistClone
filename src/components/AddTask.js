@@ -97,11 +97,7 @@ export const AddTask = ({ showAddTaskMain = true, shouldShowMain = false, showQu
             type="button"
             className="add-task__submit"
             data-testid="add-task"
-            onClick={() =>
-              showQuickAddTask
-                ? addTask() && setShowQuickAddTask(false)
-                : addTask()
-            }
+            onClick={() => showQuickAddTask ? addTask() && setShowQuickAddTask(false) : addTask() }
           >
             Add Task
           </button>
